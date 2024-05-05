@@ -1,0 +1,40 @@
+
+###
+POST http://localhost:8090/employees
+Content-Type: application/json
+
+{
+  "name": "",
+  "role": ""
+}
+
+###
+GET http://localhost:8090/employees?name=David
+
+
+###
+GET http://localhost:8090/employees/count?name=David
+
+###
+
+PUT http://localhost:8090/employees/12
+Content-Type: application/json
+
+{
+  "name": "",
+  "role": ""
+}
+
+
+###
+DELETE http://localhost:8090/employees/3
+Content-Type: application/json
+
+{
+  "name": "",
+  "role": ""
+}
+
+###
+
+

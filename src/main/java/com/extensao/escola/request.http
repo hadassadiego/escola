@@ -1,0 +1,36 @@
+POST http://localhost:8090/matricula
+Content-Type: application/json
+
+{
+  "name": "Fabio",
+  "address": "Rua test",
+  "phone": "910601333",
+  "birth": "1983-09-13",
+  "email": "test@gmail.com",
+  "subscription": "Plano mensal"
+}
+
+###
+GET http://localhost:8090/matricula
+
+###
+GET http://localhost:8090/matricula/count
+
+###
+GET http://localhost:8090/matricula/count?subscription=Plano anual
+
+###
+PUT http://localhost:8090/matricula/2
+Content-Type: application/json
+
+{
+  "name": "Filipe",
+  "address": "Rua Chavinha",
+  "phone": "910601333",
+  "birth": "1983-09-13",
+  "email": "filipe@gmail.com",
+  "subscription": "Plano anual"
+}
+
+###
+DELETE http://localhost:8090/matricula/3
