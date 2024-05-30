@@ -18,13 +18,12 @@ public class MatriculaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long subscriptionNumber;
+    private Long id;
 
     private String name;
     private String address;
     private String phone;
-    private Date birth;
+    private String birth;
     private String email;
     private String subscription;
-
 }

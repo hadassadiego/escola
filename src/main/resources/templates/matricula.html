@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Matrículas</title>
+</head>
+<body>
+<h1>Cadastro de Matrículas</h1>
+<p>Para fazer uma nova matrícula, preencha o formulário abaixo:</p>
+<form method="post" th:action="@{/matricula/save}" th:object="${matriculaModel}">
+    Nome: <input type="text" th:field="*{name}"/><br/>
+    Endereço: <input type="text" th:field="*{address}"/><br/>
+    Telefone: <input type="text" th:field="*{phone}"/><br/>
+    Data de Nascimento: <input type="text" th:field="*{birth}"/><br/>
+    Email: <input type="text" th:field="*{email}"/><br/>
+    Subscription: <input type="text" th:field="*{subscription}"/><br/>
+    <button type="submit">Salvar</button>
+</form>
+
+<h2>Lista de Matrículas</h2>
+<ul>
+    <li th:each="matricula : ${matriculas}">
+        <span th:text="${matricula.name}">Nome do Aluno</span> -
+        <span th:text="${matricula.address}">Endereço</span>
+        <span th:text="${matricula.phone}">Telefone</span>
+        <span th:text="${matricula.birth}">Data de Nascimento</span>
+        <span th:text="${matricula.email}">Email</span>
+        <span th:text="${matricula.subscription}">Subscription</span>
+    </li>
+</ul>
+</body>
+</html>

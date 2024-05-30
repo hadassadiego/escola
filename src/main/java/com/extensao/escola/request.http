@@ -2,7 +2,7 @@ POST http://localhost:8090/matricula
 Content-Type: application/json
 
 {
-  "name": "Fabio",
+  "name": "Hadassa",
   "address": "Rua test",
   "phone": "910601333",
   "birth": "1983-09-13",

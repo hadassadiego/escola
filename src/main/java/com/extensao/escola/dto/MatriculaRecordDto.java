@@ -7,7 +7,7 @@ import java.util.Date;
 public record MatriculaRecordDto(@NotBlank String name,
                                  @NotBlank String address,
                                  @NotBlank String phone,
-                                 @NotBlank Date birth,
+                                 @NotBlank String birth,
                                  @NotBlank String email,
                                  @NotBlank String subscription) {
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Matrículas</title>
+</head>
+<body>
+<h2>Lista de Matrículas</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+        <th>Data de Nascimento</th>
+        <th>E-mail</th>
+        <th>Inscrição</th>
+    </tr>
+    </thead>
+    <tbody>
+<    <tr th:each="matricula : ${matriculas}">
+        <td th:text="${matricula.name}">Nome</td>
+        <td th:text="${matricula.address}">Endereço</td>
+        <td th:text="${matricula.phone}">Telefone</td>
+        <td th:text="${matricula.birth}">Data de Nascimento</td>
+        <td th:text="${matricula.email}">E-mail</td>
+        <td th:text="${matricula.subscription}">Inscrição</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -15,7 +15,7 @@ public class JpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
-        em.setPackagesToScan("com.extensao.model");
+        em.setPackagesToScan("com.extensao.escola.model");
         em.setPersistenceUnitName("escola-matricula");
 
         Properties jpaProperties = new Properties();
